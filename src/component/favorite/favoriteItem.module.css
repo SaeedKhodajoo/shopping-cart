@@ -1,0 +1,60 @@
+.favorite-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #28727b;
+  height: 6rem;
+  padding: 1rem .5rem;
+  margin: 1rem 0;
+  gap: .5rem;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.image {
+  width: 4rem;
+  height: 4rem;
+  overflow: hidden;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actions button {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border:2px solid #28727b;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: #28727b;
+}
+
+.actions button:hover{
+  font-size: 1.3rem;
+}

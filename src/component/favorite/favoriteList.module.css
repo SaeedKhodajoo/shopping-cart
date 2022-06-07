@@ -1,0 +1,38 @@
+.favorite-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 30rem;
+  overflow: auto;
+}
+
+.clear-btn_container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.clear-btn {
+  border: 2px solid #14393e;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  background-color: #14393e;
+  color: #fff;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.clear-btn:hover {
+  background-color: #fff;
+  color: #14393e;
+}
+
+.clear-btn:disabled {
+  cursor: default;
+  background-color: #14393e69;
+  border-color: #14393e69;
+  color: #14393e;
+}

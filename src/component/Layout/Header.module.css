@@ -1,0 +1,93 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: #14393e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.favorite-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  border: 2px solid #fff;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+}
+
+.favorite-btn:hover {
+  background-color: #fff;
+  color: #14393e;
+}
+
+.main-image {
+  width: 100%;
+  height: 30rem;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.main-image img {
+  width: 110%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header {
+    padding: 0 5%;
+  }
+
+  .header h1 {
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    padding: 0 5%;
+  }
+
+  .header h1{
+    font-size: 1.5rem;
+  }
+
+  .right{
+    gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 665px) {
+ .header{
+   flex-direction: column;
+   height: 9rem;
+   justify-content: center;
+ }
+
+ .header h1{
+   margin: 0 0 1rem;
+ }
+}
+
+@media only screen and (max-width: 480px) {
+
+
+  .header h1 {
+    font-size: 1.3rem;
+  }
+}
